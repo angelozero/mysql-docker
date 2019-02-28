@@ -3,40 +3,25 @@ Simples conexão usando MySql + Java JDBC + Docker
 
 
 ```java
-	/**
-	 *  
-	 *  Comandos para executar e testar o MySql no docker
-	 * 
-	 *  docker pull mysql
-	 *  
-	 * docker run --name NOME-DO-BANCO -e MYSQL ROOT PASSWORD=terra -p 3306:3306 -d mysqldocker
-	 *
-	 * docker exec -it bd_sql_jpa mysql -p ( vai pedir a senha, digitar "terra" )
-	 *
-	 *
-	 */
-	 
-	 package com.angelozero.sqldocker;
+/**
+ *  
+ *  Comandos para executar e testar o MySql no docker
+ * 
+ *  docker pull mysql
+ *  
+ * docker run --name NOME-DO-BANCO -e MYSQL ROOT PASSWORD=terra -p 3306:3306 -d mysqldocker
+ *
+ * docker exec -it bd_sql_jpa mysql -p ( vai pedir a senha, digitar "terra" )
+ *
+ *
+ */
+
+
 
 import java.sql.*;
 import java.text.SimpleDateFormat;
 
 public class Conexao {
-	
-	
-	/**
-	 *  
-	 *  Comandos para executar e testar o MySql no docker
-	 * 
-	 *  docker pull mysql
-	 *  
-	 * docker run --name NOME-DO-BANCO -e MYSQL ROOT PASSWORD=terra -p 3306:3306 -d mysqldocker
-	 *
-	 * docker exec -it bd_sql_jpa mysql -p ( vai pedir a senha, digitar "terra" )
-	 *
-	 *
-	 */
-	
 
 	private Connection con;
 
@@ -106,7 +91,6 @@ public class Conexao {
 		System.out.println("O último que li foi " + nome);
 		System.out.println("Total de " + x);
 	}
-
 }
 
 ```
