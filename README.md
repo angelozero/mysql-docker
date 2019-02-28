@@ -9,7 +9,7 @@ Simples conexão usando MySql + Java JDBC + Docker
  * 
  *  docker pull mysql
  *  
- * docker run --name NOME-DO-BANCO -e MYSQL ROOT PASSWORD=terra -p 3306:3306 -d mysqldocker
+ * docker run --name bd_sql_jpa mysql -e MYSQL_ROOT_PASSWORD=terra -p 3306:3306 -d mysqldocker
  *
  * docker exec -it bd_sql_jpa mysql -p ( vai pedir a senha, digitar "terra" )
  *
